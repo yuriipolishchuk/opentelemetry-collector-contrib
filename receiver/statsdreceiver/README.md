@@ -71,7 +71,7 @@ statsdTestMetric1:20|c|@0.25|#mykey:myvalue
 
 When the receiver receives valid sample rate (greater than 0 and less than 1), we covert the count value to float, divide by the sample rate and then covert back to integer.
 
-The official [doc](https://github.com/statsd/statsd/blob/master/docs/metric_types.md#counting) does not support negative counter, we follow this pattern at this time. There are some requests for negative counters, we need to ake a look if we want to support later. For example:
+The official [doc](https://github.com/statsd/statsd/blob/master/docs/metric_types.md#counting) does not support negative counter, we follow this pattern at this time. There are some requests for negative counters, we need to take a look if we want to support later. For example:
 https://github.com/influxdata/telegraf/issues/1898
 https://thenewstack.io/collecting-metrics-using-statsd-a-standard-for-real-time-monitoring/
 https://docs.datadoghq.com/developers/metrics/dogstatsd_metrics_submission/#count
